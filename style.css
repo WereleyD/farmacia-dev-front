@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+:root{
+    --branco-fundo: #FFFFFF;
+    --cinza-footer: #E2E2E2;
+    --preto-descricao: #000000;
+    --fonte-primaria: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    display: flex;
+    background-color: var(--cinza-footer);
+    height: 80px;
+}
+
+.cabecalho__menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    gap: 65px;
+    margin-left: 107px;
+}
+
+.cabecalho__menu__link{
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--preto-descricao);
+}
+
+.cabecalho__logo{
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-primaria);
+    font-weight: 900;
+    font-size: 15px;
+    gap: 15px;
+}
+
+.cabecalho__logo__imagem{
+    margin-left: 217px;
+}
