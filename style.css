@@ -15,10 +15,15 @@
     padding: 0;
 }
 
+body{
+    box-sizing: border-box;
+}
+
 .cabecalho{
     display: flex;
     background-color: var(--cinza-footer);
     height: 80px;
+    width: 100%;
 }
 
 .cabecalho__menu{
@@ -64,14 +69,15 @@
 
 .medicamento__lista{
     margin: 33px 217px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     gap: 30px;
 }
 
 .medicamento__lista__container{
-    
     background-color: var(--cinza-fundo-produto);
+    width: 270px;
 }
 
 .medicamento__lista__conteudo{
