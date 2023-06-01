@@ -3,7 +3,9 @@
 :root{
     --branco-fundo: #FFFFFF;
     --cinza-footer: #E2E2E2;
+    --cinza-fundo-produto: #C4C4C4;
     --preto-descricao: #000000;
+    --cinza-botao: #525252;
     --fonte-primaria: 'Montserrat', sans-serif;
     --fonte-secundaria: 'Roboto', sans-serif;
 }
@@ -42,9 +44,71 @@
     font-family: var(--fonte-primaria);
     font-weight: 900;
     font-size: 15px;
+    text-decoration: none;
+    color: var(--preto-descricao);
     gap: 15px;
+    
 }
 
 .cabecalho__logo__imagem{
     margin-left: 217px;
 }
+
+.medicamento__titulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 900;
+    font-size: 25px;
+    color: var(--preto-descricao);
+    margin: 33px 217px;
+}
+
+.medicamento__lista{
+    margin: 33px 217px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.medicamento__lista__container{
+    
+    background-color: var(--cinza-fundo-produto);
+}
+
+.medicamento__lista__conteudo{
+    text-align: center;
+}
+
+.medicamento__lista__fav{
+    margin: 7px 14px 2px 234px;
+}
+
+.medicamento__nome{
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--preto-descricao);
+    margin-top: 42px;
+}
+
+.medicamento__valor{
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--preto-descricao);
+    margin-top: 43px;
+}
+
+.medicamento__botao{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--branco-fundo);
+    font-family: var(--fonte-secundaria);
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--cinza-botao);
+    margin: 45px 14px 37px;
+    padding: 8px 30px;
+    border-radius: 5px;
+}
+
