@@ -8,6 +8,7 @@
     --cinza-botao: #525252;
     --fonte-primaria: 'Montserrat', sans-serif;
     --fonte-secundaria: 'Roboto', sans-serif;
+    --fonte-contato: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 
 *{
@@ -67,6 +68,11 @@ body{
     margin: 33px 217px;
 }
 
+.formulario{
+    margin: 33px 515px;
+
+}
+
 .medicamento__lista{
     margin: 33px 217px;
     display: grid;
@@ -116,4 +122,44 @@ body{
     margin: 45px 14px 37px;
     padding: 8px 10px;
     border-radius: 5px;
+}
+
+.contato__formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato__container{
+    margin: 47px 515px 0;
+    font-family: var(--fonte-contato);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.formulario__input{
+    padding: 9px 16px;
+    margin: 5px 0 16px;
+    border: 2px solid var(--preto-descricao);
+    border-radius: 0;
+}
+
+.formulario__input__check{
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.button__container{
+    display: flex;
+    justify-content: right;
+}
+.formulario__input__button{
+    width: 229px;
+    height: 26px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--branco-fundo);
+    border-radius: 5px;
+    background-color: var(--cinza-botao);
 }
