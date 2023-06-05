@@ -6,6 +6,7 @@
     --cinza-fundo-produto: #C4C4C4;
     --preto-descricao: #000000;
     --cinza-botao: #525252;
+    --rosa-botao-hover: #8d4667;
     --fonte-primaria: 'Montserrat', sans-serif;
     --fonte-secundaria: 'Roboto', sans-serif;
     --fonte-contato: 'Comic Sans MS', 'Comic Sans', cursive;
@@ -84,6 +85,12 @@ body{
 .medicamento__lista__container{
     background-color: var(--cinza-fundo-produto);
     width: 270px;
+    border-radius: 5px;
+}
+
+.medicamento__lista__container:hover{
+    box-shadow: 5px 2px 2px var(--preto-descricao);
+    transition-duration: 0.5s;
 }
 
 .medicamento__lista__conteudo{
@@ -122,6 +129,12 @@ body{
     margin: 45px 14px 37px;
     padding: 8px 10px;
     border-radius: 5px;
+}
+
+.medicamento__botao:hover{
+    box-shadow: 5px 3px 2px black;
+    transition-duration: 0.5s;
+    background-color: var(--rosa-botao-hover);
 }
 
 .contato__formulario{
